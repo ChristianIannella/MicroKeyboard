@@ -9,6 +9,7 @@ Basata su [ArduinoMicro](https://store.arduino.cc/products/arduino-micro) permet
 
 
 MicroKeyboard è open-source e open-hardware puoi comunque decidere di acquistarne uno gia assemblato su [Tindie](https://www.tindie.com/)
+
 <picture><a href="https://www.tindie.com/stores/chris_maker_/?ref=offsite_badges&utm_source=sellers_chris_maker_&utm_medium=badges&utm_campaign=badge_medium"><img src="https://d2ss6ovg47m0r5.cloudfront.net/badges/tindie-mediums.png" alt="I sell on Tindie" width="150" height="78"></a><picture>
 
 Puoi trovare i file Eagle [qui](https://github.com/ChristianIannella/MicroKeyboard/tree/main/MicroKeyboard)
