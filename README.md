@@ -1,11 +1,12 @@
 # MicroKeyboard
 
-
-![This is an image](https://github.com/ChristianIannella/MicroKeyboard/blob/main/media/Screenshot%202023-01-04%20alle%2020.52.09.png)
-
 MicroKeyboard è una piccola tastiera completamente customizzabile che in realtà racchiude anche un mouse.
 
 Basata su [ArduinoMicro](https://store.arduino.cc/products/arduino-micro) permette di scegliere la funzione da associare ad ogni singolo tasto inclusi encoder e thumbstick.
+
+
+![This is an image](https://github.com/ChristianIannella/MicroKeyboard/blob/main/media/Screenshot%202023-01-04%20alle%2020.52.09.png)
+
 
 
 MicroKeyboard è open-source e open-hardware puoi comunque decidere di acquistarne uno gia assemblato su [Tindie](https://www.tindie.com/)
@@ -35,7 +36,7 @@ Ci sono alcuni esempi nella cartella [Arduino](https://github.com/ChristianIanne
   
 Negli esempi vengono utilizzate due librerie una per la gestione dell'encoder e una per la simulazione di mouse e tastiera.
   
-  - [HID Project](https://github.com/NicoHood/HID) di [NicoHood] (https://github.com/NicoHood)
+  - [HID Project](https://github.com/NicoHood/HID) di [NicoHood](https://github.com/NicoHood)
   - [EncoderButton](https://github.com/Stutchbury/EncoderButton) di [Stutchbury](https://github.com/Stutchbury)
   
 Visita queste pagine e scoprirai quante cose puoi fare con cosí pochi pulsanti.
