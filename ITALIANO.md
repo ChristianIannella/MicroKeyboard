@@ -39,4 +39,4 @@ Visita queste pagine e scoprirai quante cose puoi fare con cosí pochi pulsanti.
 
 
 
-[INDIETRO](https://github.com/ChristianIannella/MicroKeyboard/blob/main/README.md)
+[INDIETRO](https://github.com/ChristianIannella/MicroKeyboard)
