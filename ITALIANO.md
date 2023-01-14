@@ -35,3 +35,8 @@ Negli esempi vengono utilizzate due librerie una per la gestione dell'encoder e 
   - [EncoderButton](https://github.com/Stutchbury/EncoderButton) di [Stutchbury](https://github.com/Stutchbury)
   
 Visita queste pagine e scoprirai quante cose puoi fare con cosí pochi pulsanti.
+
+
+
+
+[INDIETRO](https://github.com/ChristianIannella/MicroKeyboard/blob/main/README.md)
