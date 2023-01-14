@@ -1,15 +1,24 @@
+# MicroKeyboard
+
+MicroKeyboard is a small customizable keyboard/mouse.
+
+
+Based on [ArduinoMicro](https://store.arduino.cc/products/arduino-micro), it allows you to choose the function to be associated with each single key, including encoder and thumbstick.
+
+
 
 ## PCB
   
 
-A bordo della scheda troverai un thumbstick a due assi con pulsante, un encoder con pulsante e cinque pulsatti di tipo Cherry MX con led. Inoltre troverai un connettore con i rimanenti pin liberi del micro tra cui porta I2C e UART.
-Sulla scheda sono predisposti i fori per le resistenze di pull-up per la porta I2C, decidi tu se montarle o meno.
- 
-Ricorda Arduino Micro lavora a 5v se invece decidi di alimentare la scheda dalla porta esterna ricorda che `VIN`deve essere compresa tra 7 e 12v!
-  
-Per maggiori dettagli consulta la [scheda tecnica](https://store.arduino.cc/products/arduino-micro)
+On board you will find a two-axis thumbstick with button, an encoder with button and five Cherry MX-type buttons with LEDs. Also you will find a connector with the remaining free pins of the micro including I2C and UART port.
+The holes for the pull-up resistors for the I2C port are prepared on the board, you decide whether to mount them or not.
 
-Puoi trovare i file Eagle [qui](https://github.com/ChristianIannella/MicroKeyboard/tree/main/MicroKeyboard)  
+
+Remember Arduino Micro works at 5v, if you decide to power the board from the external port remember that `VIN` must be between 7 and 12v!
+  
+For more details see [datasheet](https://store.arduino.cc/products/arduino-micro)
+
+You can find Eagle files [here](https://github.com/ChristianIannella/MicroKeyboard/tree/main/MicroKeyboard)  
   
 
 
