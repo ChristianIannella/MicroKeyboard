@@ -28,16 +28,15 @@ You can find Eagle files [here](https://github.com/ChristianIannella/MicroKeyboa
   
 ## FIRMWARE  
   
-Ci sono alcuni esempi nella cartella [Arduino](https://github.com/ChristianIannella/MicroKeyboard/tree/main/Arduino) ai quali potrai ispirarti per customizzare la tua MicroKeyboard.  
   
+There are some examples in the [Arduino](https://github.com/ChristianIannella/MicroKeyboard/tree/main/Arduino) folder which you can use to inspire you to customize your MicroKeyboard.
   
-Negli esempi vengono utilizzate due librerie una per la gestione dell'encoder e una per la simulazione di mouse e tastiera.
+In the examples two libraries are used, one for managing the encoder and one for simulating the mouse and keyboard.
   
-  - [HID Project](https://github.com/NicoHood/HID) di [NicoHood](https://github.com/NicoHood)
-  - [EncoderButton](https://github.com/Stutchbury/EncoderButton) di [Stutchbury](https://github.com/Stutchbury)
+  - [HID Project](https://github.com/NicoHood/HID) by [NicoHood](https://github.com/NicoHood)
+  - [EncoderButton](https://github.com/Stutchbury/EncoderButton) by [Stutchbury](https://github.com/Stutchbury)
   
-Visita queste pagine e scoprirai quante cose puoi fare con cosí pochi pulsanti.
-
+Visit these pages and you will discover how many things you can do with so few buttons.
 
 
 [BACK](https://github.com/ChristianIannella/MicroKeyboard)
