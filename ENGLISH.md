@@ -6,6 +6,9 @@ MicroKeyboard is a small customizable keyboard/mouse.
 Based on [ArduinoMicro](https://store.arduino.cc/products/arduino-micro), it allows you to choose the function to be associated with each single key, including encoder and thumbstick.
 
 
+![MicroKeyboard](https://github.com/ChristianIannella/MicroKeyboard/blob/main/media/Screenshot%202023-01-04%20alle%2020.52.09.png)
+
+
 
 ## PCB
   
@@ -16,7 +19,7 @@ The holes for the pull-up resistors for the I2C port are prepared on the board, 
 
 Remember Arduino Micro works at 5v, if you decide to power the board from the external port remember that `VIN` must be between 7 and 12v!
   
-For more details see [tech specs](https://store.arduino.cc/products/arduino-micro)
+For more details see [datasheet](https://store.arduino.cc/products/arduino-micro)
 
 You can find Eagle files [here](https://github.com/ChristianIannella/MicroKeyboard/tree/main/MicroKeyboard)  
   
@@ -34,3 +37,7 @@ Negli esempi vengono utilizzate due librerie una per la gestione dell'encoder e 
   - [EncoderButton](https://github.com/Stutchbury/EncoderButton) di [Stutchbury](https://github.com/Stutchbury)
   
 Visita queste pagine e scoprirai quante cose puoi fare con cosí pochi pulsanti.
+
+
+
+[BACK](https://github.com/ChristianIannella/MicroKeyboard)
