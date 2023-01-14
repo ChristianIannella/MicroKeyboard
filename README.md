@@ -7,7 +7,13 @@ Based on [ArduinoMicro](https://store.arduino.cc/products/arduino-micro), it all
 
 
 
-More [Italiano](https://github.com/ChristianIannella/MicroKeyboard/edit/main/ITALIANO.md)/[English](https://github.com/ChristianIannella/MicroKeyboard/edit/main/ENGLISH.md)
+MicroKeyboard è open-source e open-hardware puoi comunque decidere di acquistarne uno gia assemblato su [Tindie](https://www.tindie.com/)
+
+<picture><a href="https://www.tindie.com/stores/chris_maker_/?ref=offsite_badges&utm_source=sellers_chris_maker_&utm_medium=badges&utm_campaign=badge_medium"><img src="https://d2ss6ovg47m0r5.cloudfront.net/badges/tindie-mediums.png" alt="I sell on Tindie" width="150" height="78"></a><picture>
+
+
+
+More [Italiano](https://github.com/ChristianIannella/MicroKeyboard/blob/main/ITALIANO.md)/[English](https://github.com/ChristianIannella/MicroKeyboard/blob/main/ENGLISH.md)
 
 
 ![MicroKeyboard](https://github.com/ChristianIannella/MicroKeyboard/blob/main/media/Screenshot%202023-01-04%20alle%2020.52.09.png)
