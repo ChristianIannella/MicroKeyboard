@@ -1,3 +1,6 @@
+#define HID_CUSTOM_LAYOUT
+#define LAYOUT_GERMAN 
+
 #include <Arduino.h>
 #include "HID-Project.h" 
 #include <EncoderButton.h>
@@ -8,6 +11,8 @@
 #define ANALOG_Y       19
 #define ANALOG_BTN     20
 bool analog_btn_state = false;
+int mouse_delay = 20;
+bool left_press = false;
 
 #define ENC_A     7
 #define ENC_B     8
@@ -15,24 +20,25 @@ bool analog_btn_state = false;
 bool zoom_scroll = false;
 EncoderButton eb1(ENC_A, ENC_B, ENC_BTN);
 
-unsigned long previousMillis = 0; 
+static unsigned long previousMillis2 = 0;
+static unsigned long previousMillis = 0; 
 const long interval = 3;
 int bg_brightness =  10;
 int pushed_switch = 0;
 bool increase_brightness = true;
 bool decrease_brightness = false;
 
-#define SWC_1     14
-#define SWC_2     15
-#define SWC_3     16
-#define SWC_4     21
-#define SWC_5     22
+#define SWC_1     15
+#define SWC_2     21
+#define SWC_3     22
+#define SWC_4     16
+#define SWC_5     14
 
-#define LED_1     5
-#define LED_2     6
-#define LED_3     9
-#define LED_4     10
-#define LED_5     11
+#define LED_1     9
+#define LED_2     10
+#define LED_3     11
+#define LED_4     5
+#define LED_5     6
 
 bool swc_1_state = false;
 bool swc_2_state = false;
@@ -40,64 +46,64 @@ bool swc_3_state = false;
 bool swc_4_state = false;
 bool swc_5_state = false;
 
-void swc_1_pushed(){
+void swc_1_pushed(){ // password
 
   #ifdef DEBUG
     Serial.println("1 pushed");
   #endif
 
   pushed_switch = LED_1;
-  BootKeyboard.press('a');
-  delay (5);
-  BootKeyboard.release('a');
+  Keyboard.println("christian");
 }
 
-void swc_2_pushed(){
+void swc_2_pushed(){ // email address
 
   #ifdef DEBUG
     Serial.println("2 pushed");
   #endif
 
   pushed_switch = LED_2;
-  BootKeyboard.press('b');
-  delay (5);
-  BootKeyboard.release('b');
+  Keyboard.print("christianiannella92@gmail.com");
 }
 
-void swc_3_pushed(){
+void swc_3_pushed(){ // clic cancel
 
   #ifdef DEBUG
     Serial.println("3 pushed");
   #endif
 
   pushed_switch = LED_3;
-  BootKeyboard.press('c');
-  delay (5);
-  BootKeyboard.release('c');
+  BootKeyboard.write(KEY_CANCEL);
 }
 
-void swc_4_pushed(){
+void swc_4_pushed(){ // clic mouse left button
 
   #ifdef DEBUG
     Serial.println("4 pushed");
   #endif
 
   pushed_switch = LED_4;
-  BootKeyboard.press('d');
-  delay (5);
-  BootKeyboard.release('d');
+  AbsoluteMouse.click(MOUSE_LEFT);
 }
 
-void swc_5_pushed(){
+void swc_5_pushed(){ // press/release mouse left button
 
   #ifdef DEBUG
     Serial.println("5 pushed");
   #endif
 
   pushed_switch = LED_5;
-  BootKeyboard.press('e');
-  delay (5);
-  BootKeyboard.release('e');
+
+  if (left_press == false) {
+    AbsoluteMouse.press(MOUSE_LEFT);
+    digitalWrite(LED_BUILTIN, HIGH);
+    left_press = true;
+  }
+  else if(left_press == true){
+    AbsoluteMouse.release(MOUSE_LEFT);
+    digitalWrite(LED_BUILTIN, LOW);
+    left_press = false;
+  }
 }
 
 void analog_btn_pushed(){
@@ -106,9 +112,7 @@ void analog_btn_pushed(){
     Serial.println("Analog pushed");
   #endif
 
-  BootKeyboard.press('f');
-  delay (5);
-  BootKeyboard.release('f');
+  AbsoluteMouse.click(MOUSE_RIGHT);
 
 }
 
@@ -119,10 +123,11 @@ void onEb1Clicked(EncoderButton& eb) {
   #endif
 
   if (eb.clickCount()== 1){
-    Mouse.click(MOUSE_RIGHT); 
+    zoom_scroll = !zoom_scroll;
+    
   }
   else if (eb.clickCount()== 2){
-    zoom_scroll = !zoom_scroll;
+    //pass 
   }
 }
 
@@ -272,11 +277,42 @@ void led_effect(){
   }
 }
 
+void mouse_move(int x, int y){
+
+  int delta_x = 0;
+  int delta_y = 0;
+
+  if (x>600){
+    int i = map(x,600,1024,1,15);
+    delta_x=i; 
+  } 
+
+  else if (x<400){
+    int i = map(x,400,0,1,15);
+    delta_x=-i; 
+  } 
+  
+  if (y>600) {
+    int l = map(y,600,1024,1,15);
+    delta_y=-l; 
+  } 
+
+  else if (y<400){
+    int l = map(y,400,0,1,15);
+    delta_y=l;  
+  } 
+  
+  Mouse.move(delta_x,delta_y,0); 
+
+  }
+
 void setup() {
 
   #ifdef DEBUG
     Serial.begin(9600);
   #endif
+
+  pinMode(LED_BUILTIN, OUTPUT);
 
   pinMode(SWC_1, INPUT_PULLUP);
   pinMode(SWC_2, INPUT_PULLUP);
@@ -308,7 +344,7 @@ void setup() {
     analogWrite(LED_5,i);
     delay(7);
   }
-
+  
   Keyboard.begin();
   Mouse.begin();
 
@@ -329,4 +365,15 @@ void loop() {
     previousMillis = currentMillis;
     led_effect();
   } 
-}  
+
+   int x = analogRead(ANALOG_X);
+   int y = analogRead(ANALOG_Y);
+   
+   if (previousMillis2 > millis()) previousMillis2 = millis(); 
+
+   if (millis() - previousMillis2 > mouse_delay) 
+    {
+    mouse_move(x,y);
+    previousMillis2 = millis();
+    }
+} 
