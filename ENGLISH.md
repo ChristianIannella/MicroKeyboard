@@ -16,7 +16,7 @@ The holes for the pull-up resistors for the I2C port are prepared on the board, 
 
 Remember Arduino Micro works at 5v, if you decide to power the board from the external port remember that `VIN` must be between 7 and 12v!
   
-For more details see [datasheet](https://store.arduino.cc/products/arduino-micro)
+For more details see [tech specs](https://store.arduino.cc/products/arduino-micro)
 
 You can find Eagle files [here](https://github.com/ChristianIannella/MicroKeyboard/tree/main/MicroKeyboard)  
   
