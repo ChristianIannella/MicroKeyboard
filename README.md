@@ -15,5 +15,15 @@ MicroKeyboard è open-source e open-hardware puoi comunque decidere di acquistar
 Puoi trovare i file Eagle [qui](https://github.com/ChristianIannella/MicroKeyboard/tree/main/MicroKeyboard)
 
 A bordo della scheda troverai un thumbstick a due assi con pulsante, un encoder con pulsante e cinque pulsatti di tipo Cherry MX con led. Inoltre troverai un connettore con i rimanenti pin liberi del micro tra cui porta I2C e UART.
+  
+Ci sono alcuni esempi nella cartella [Arduino](https://github.com/ChristianIannella/MicroKeyboard/tree/main/Arduino) ai quali potrai ispirarti per customizzare la tua MicroKeyboard.
+  
+Negli esempi vengono utilizzate due librerie una per la gestione dell'encoder e una per la simulazione di mouse e tastiera.
+  
+  - [HID Project](https://github.com/NicoHood/HID) di [NicoHood] (https://github.com/NicoHood)
+  - [EncoderButton](https://github.com/Stutchbury/EncoderButton) di [Stutchbury](https://github.com/Stutchbury)
+  
+  
+  
 
 
