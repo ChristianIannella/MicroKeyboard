@@ -53,7 +53,7 @@ void swc_1_pushed(){ // password
   #endif
 
   pushed_switch = LED_1;
-  Keyboard.println("christian");
+  Keyboard.println("your_password");
 }
 
 void swc_2_pushed(){ // email address
@@ -63,7 +63,7 @@ void swc_2_pushed(){ // email address
   #endif
 
   pushed_switch = LED_2;
-  Keyboard.print("christianiannella92@gmail.com");
+  Keyboard.print("your_mail");
 }
 
 void swc_3_pushed(){ // clic cancel
