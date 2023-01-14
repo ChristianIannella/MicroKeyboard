@@ -73,7 +73,7 @@ void swc_3_pushed(){ // clic cancel
   #endif
 
   pushed_switch = LED_3;
-  BootKeyboard.write(KEY_CANCEL);
+  BootKeyboard.write(KEY_DELETE);
 }
 
 void swc_4_pushed(){ // clic mouse left button
