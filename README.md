@@ -7,7 +7,7 @@ Based on [ArduinoMicro](https://store.arduino.cc/products/arduino-micro), it all
 
 
 
-MicroKeyboard is open-source and open-hardware but you can still decide to buy one already assembled on [Tindie](https://www.tindie.com/)
+MicroKeyboard is open-source and open-hardware but you can still decide to buy one already assembled on [Tindie](https://www.tindie.com/products/chris_maker_/microkeyboard/)
 
 <picture><a href="https://www.tindie.com/stores/chris_maker_/?ref=offsite_badges&utm_source=sellers_chris_maker_&utm_medium=badges&utm_campaign=badge_medium"><img src="https://d2ss6ovg47m0r5.cloudfront.net/badges/tindie-mediums.png" alt="I sell on Tindie" width="150" height="78"></a><picture>
 
