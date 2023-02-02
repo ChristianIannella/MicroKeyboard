@@ -5,7 +5,7 @@ MicroKeyboard √® una piccola tastiera completamente customizzabile che in realt√
 Basata su [ArduinoMicro](https://store.arduino.cc/products/arduino-micro) permette di scegliere la funzione da associare ad ogni singolo tasto inclusi encoder e thumbstick.
 
 
-![MicroKeyboard](https://github.com/ChristianIannella/MicroKeyboard/blob/main/media/Screenshot%202023-01-04%20alle%2020.52.09.png)
+![MicroKeyboard](https://github.com/ChristianIannella/MicroKeyboard/blob/main/media/7.png)
 
 
 
