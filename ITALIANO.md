@@ -13,7 +13,8 @@ Basata su [ArduinoMicro](https://store.arduino.cc/products/arduino-micro) permet
   
 
 A bordo della scheda troverai un thumbstick a due assi con pulsante, un encoder con pulsante e cinque pulsatti di tipo Cherry MX con led. Inoltre troverai un connettore con i rimanenti pin liberi del micro tra cui porta I2C e UART.
-Sulla scheda sono predisposti i fori per le resistenze di pull-up per la porta I2C, decidi tu se montarle o meno.
+I pin `SCL` e `SDA` sono tenuti a pull-up da R8 e R9 (10k). Ricorda che Arduino Micro lavora a 5v.
+
  
 Ricorda Arduino Micro lavora a 5v se invece decidi di alimentare la scheda dalla porta esterna ricorda che `VIN`deve essere compresa tra 7 e 12v!
   
