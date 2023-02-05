@@ -30,7 +30,8 @@ Puoi trovare lo schema elettrico [qui](https://github.com/ChristianIannella/Micr
 ## FIRMWARE  
   
 Ci sono alcuni esempi nella cartella [Arduino](https://github.com/ChristianIannella/MicroKeyboard/tree/main/Arduino/Example_1) ai quali potrai ispirarti per customizzare la tua MicroKeyboard.  
-  
+
+E' possibile scegliere tra diversi [layout](https://github.com/ChristianIannella/MicroKeyboard/blob/main/Docs/Layout.txt)
   
 Negli esempi vengono utilizzate due librerie, una per la gestione dell'encoder e una per la simulazione di mouse e tastiera. 
   
@@ -38,6 +39,7 @@ Negli esempi vengono utilizzate due librerie, una per la gestione dell'encoder e
   - [EncoderButton](https://github.com/Stutchbury/EncoderButton) di [Stutchbury](https://github.com/Stutchbury)
   
 Visita queste pagine e scoprirai quante cose puoi fare con cosí pochi pulsanti.
+
 
 In oltre è possibile sfruttare le librerie messe a disposizione da Arduino.cc 
 
