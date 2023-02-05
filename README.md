@@ -18,7 +18,7 @@ MicroKeyboard is open-source and open-hardware but you can still decide to buy o
 [ENGLISH](https://github.com/ChristianIannella/MicroKeyboard/blob/main/ENGLISH.md)
 
 
-![MicroKeyboard](https://github.com/ChristianIannella/MicroKeyboard/blob/main/media/5.jpg)
+![MicroKeyboard](https://github.com/ChristianIannella/MicroKeyboard/blob/main/Docs/5.jpg)
 
 
 
