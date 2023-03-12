@@ -12,7 +12,9 @@ MicroKeyboard is open-source and open-hardware but you can still decide to buy o
 <picture><a href="https://www.tindie.com/stores/chris_maker_/?ref=offsite_badges&utm_source=sellers_chris_maker_&utm_medium=badges&utm_campaign=badge_medium"><img src="https://d2ss6ovg47m0r5.cloudfront.net/badges/tindie-mediums.png" alt="I sell on Tindie" width="150" height="78"></a><picture>
 
 
-
+Thanks to PCBWay for sponsoring this project.
+  
+  
 ![PCBWay](https://github.com/ChristianIannella/MicroKeyboard/blob/main/Docs/pcbway_logo.png)
 
 
