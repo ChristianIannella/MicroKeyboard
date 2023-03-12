@@ -13,7 +13,7 @@ MicroKeyboard is open-source and open-hardware but you can still decide to buy o
 
 
 
-![PCBWay](https://github.com/ChristianIannella/MicroKeyboard/blob/main/Docs/pcbway_logo.jpg)
+![PCBWay](https://github.com/ChristianIannella/MicroKeyboard/blob/main/Docs/pcbway_logo.png)
 
 
 
