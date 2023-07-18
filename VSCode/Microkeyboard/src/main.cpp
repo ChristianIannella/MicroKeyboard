@@ -46,7 +46,7 @@ bool swc_3_state = false;
 bool swc_4_state = false;
 bool swc_5_state = false;
 
-void swc_1_pushed(){ // password
+void swc_1_pushed(){ // your password
 
   #ifdef DEBUG
     Serial.println("1 pushed");
