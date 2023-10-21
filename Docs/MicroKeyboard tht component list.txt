@@ -11,5 +11,5 @@ R9 10K
 C1 0.01 uF
 C2 0.01 uF
 
-Pulsant Cherry MX
+Pulsante Cherry MX
 Led standard 3mm
