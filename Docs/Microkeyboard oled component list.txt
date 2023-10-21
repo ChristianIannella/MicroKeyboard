@@ -6,6 +6,12 @@ R6 4.7K
 R7 4.7K
 R8 10K
 R9 10K
+
 C1 0.01 uF
 C2 0.01 uF
+
 Display SSD1305 128x32
+
+Pulsante Cherry MX
+
+Led standard 3mm
